@@ -10,57 +10,46 @@ jobs:
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
-      - name: Install Dependencies (cloc and gh)
+      - name: Install Dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y cloc gh
-          touch loc_report.txt
 
-      - name: Analyze CURRENT Repository (sagearbor)
-        run: |
-          echo "--- Analyzing current repo (${{ github.repository }}) ---"
-          cloc . --exclude-dir=node_modules,.github,vendor --md >> loc_report.txt
-
-      - name: Fetch & Analyze OTHER Repositories
-        run: |
-          mkdir -p /tmp/other_repos
-          REPORT_PATH=$(pwd)/loc_report.txt
-          
-          # Get list of repos
-          repos=$(gh repo list ${{ github.repository_owner }} --source --json name --limit 1000 | jq -r '.[].name')
-          
-          cd /tmp/other_repos
-          for repo_name in $repos; do
-            if [ "$repo_name" != "${{ github.event.repository.name }}" ]; then
-              echo "--- Cloning and analyzing $repo_name ---"
-              # Use gh repo clone to handle authentication automatically via GH_TOKEN
-              gh repo clone "${{ github.repository_owner }}/$repo_name" -- --depth 1
-              
-              if [ -d "$repo_name" ]; then
-                cloc "$repo_name" --exclude-dir=node_modules,vendor --md >> "$REPORT_PATH"
-                rm -rf "$repo_name"
-              fi
-            fi
-          done
+      - name: Run Python Analysis
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-
-      - name: Append Report to README
+          REPO_OWNER: ${{ github.repository_owner }}
+          CURRENT_REPO: ${{ github.event.repository.name }}
         run: |
-          # Use a marker to replace content reliably
-          # This deletes everything between the LOC markers if they exist
-          sed -i '//,//d' README.md || true
-          
-          echo "" >> README.md
-          echo "## Lines of Code Report" >> README.md
-          echo "Last Updated: $(date)" >> README.md
-          cat loc_report.txt >> README.md
-          echo -e "\n" >> README.md
+          # Create the python script on the fly
+          cat << 'EOF' > analyzer.py
+          # ... (Insert the Python code provided above here) ...
+          EOF
+          python3 analyzer.py
 
-      - name: Commit Report Update
-        uses: actions-js/push@v1
-        with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          branch: main
-          message: "Auto-generated: Update Lines of Code Report"
+      - name: Update README
+        run: |
+          # Ensure markers exist to avoid sed errors
+          touch README.md
+          if ! grep -q "" README.md; then
+            echo -e "\n\n" >> README.md
+          fi
+          
+          # Use a temporary file to build the new README
+          sed -n '1,//p' README.md > README.new
+          echo "## Project Stats (Auto-generated)" >> README.new
+          cat loc_report.md >> README.new
+          sed -n '//,$p' README.md >> README.new
+          mv README.new README.md
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update Code Analysis Table" || echo "No changes to commit"
+          # Use the PAT for pushing to bypass 403 errors
+          git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
