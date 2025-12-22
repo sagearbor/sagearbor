@@ -23,19 +23,18 @@ jobs:
           cloc . --exclude-dir=node_modules,.github,vendor --md >> loc_report.txt
 
       - name: Fetch & Analyze OTHER Repositories
-        # CRITICAL FIX: Pass GITHUB_TOKEN as an environment variable (GH_TOKEN)
         run: |
-          mkdir /tmp/other_repos
+          mkdir -p /tmp/other_repos
           cd /tmp/other_repos
           
-          # Iterate through ALL repos
-          gh repo list ${{ github.repository_owner }} --source --json name | jq -r '.[].name' | while read repo_name; do
-            # Skip the current profile repo as it's already analyzed
+          # Fix the shell loop interaction to prevent "Too many arguments" error
+          gh repo list ${{ github.repository_owner }} --source --json name | jq -r '.[].name' | while IFS= read -r repo_name; do
             if [ "$repo_name" != "${{ github.event.repository.name }}" ]; then
               echo "--- Cloning and analyzing $repo_name ---"
-              git clone --depth 1 github.com{{ github.repository_owner }}/$repo_name.git
+              # Ensure clone command is clean
+              git clone --depth 1 "github.com{{ github.repository_owner }}/$repo_name.git"
               # Analyze the repo inside /tmp/other_repos directory
-              cloc $repo_name --exclude-dir=node_modules,vendor --md >> /home/runner/work/sagearbor/sagearbor/loc_report.txt
+              cloc "$repo_name" --exclude-dir=node_modules,vendor --md >> /home/runner/work/sagearbor/sagearbor/loc_report.txt
             fi
           done
         env:
@@ -43,6 +42,8 @@ jobs:
 
       - name: Append Report to README
         run: |
+          # Remove old report if it exists before appending new data
+          sed -i '/^## Lines of Code Report/,/^\s*$/d' README.md || true
           echo "## Lines of Code Report" >> README.md
           cat loc_report.txt >> README.md
 
