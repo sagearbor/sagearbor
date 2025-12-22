@@ -16,31 +16,85 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cloc gh
+          sudo apt-get install -y cloc gh python3-matplotlib
+          pip install pandas # For easy table handling
 
-      - name: Run Python Analysis
+      - name: Run Python Analysis & Graphing
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
-          CURRENT_REPO: ${{ github.event.repository.name }}
         run: |
-          # Create the python script on the fly
           cat << 'EOF' > analyzer.py
-          # ... (Insert the Python code provided above here) ...
+          import os, subprocess, json
+          import matplotlib.pyplot as plt
+
+          OWNER = os.getenv("REPO_OWNER")
+
+          def run_cmd(cmd, cwd=None):
+              return subprocess.check_output(cmd, shell=True, cwd=cwd, text=True).strip()
+
+          def main():
+              if not os.path.exists("/tmp/repos"): os.makedirs("/tmp/repos")
+              repos = json.loads(run_cmd(f'gh repo list {OWNER} --source --json name --limit 100'))
+              results = []
+
+              for r in repos:
+                  name = r['name']
+                  try:
+                      run_cmd(f'gh repo clone {OWNER}/{name} -- --depth 1', cwd="/tmp/repos")
+                      path = f"/tmp/repos/{name}"
+                      
+                      # Get LOC and Files
+                      cloc = run_cmd(f'cloc "{path}" --csv --quiet --exclude-dir=node_modules,vendor').splitlines()
+                      files, loc = 0, 0
+                      for line in cloc:
+                          if line.startswith("SUM"):
+                              p = line.split(',')
+                              files, loc = p[1], p[4]
+
+                      # Count pytests
+                      tests = run_cmd(f'grep -rE "def test_|@pytest.mark" "{path}" --include="*.py" | wc -l')
+                      
+                      results.append({"Repo": name, "Files": int(files), "Tests": int(tests), "LOC": int(loc)})
+                      run_cmd(f'rm -rf "{path}"')
+                  except: continue
+
+              # Sort by LOC descending
+              results = sorted(results, key=lambda x: x['LOC'], reverse=True)
+
+              # Generate Markdown Table (Dense Format)
+              with open("loc_report.md", "w") as f:
+                  f.write("| Repo | Files | Tests | LOC |\n|:---|---:|---:|---:|\n")
+                  for res in results:
+                      f.write(f"| {res['Repo']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n")
+
+              # Generate Graph
+              names = [r['Repo'] for r in results[:10]] # Top 10
+              locs = [r['LOC'] for r in results[:10]]
+              
+              plt.figure(figsize=(10, 6))
+              plt.barh(names, locs, color='skyblue')
+              plt.xlabel('Lines of Code')
+              plt.title('Top 10 Repositories by LOC')
+              plt.gca().invert_yaxis()
+              plt.tight_layout()
+              plt.savefig('stats.png')
+
+          if __name__ == "__main__":
+              main()
           EOF
           python3 analyzer.py
 
       - name: Update README
         run: |
-          # Ensure markers exist to avoid sed errors
           touch README.md
           if ! grep -q "" README.md; then
             echo -e "\n\n" >> README.md
           fi
           
-          # Use a temporary file to build the new README
           sed -n '1,//p' README.md > README.new
-          echo "## Project Stats (Auto-generated)" >> README.new
+          echo "### Lines of Code Visualized" >> README.new
+          echo "![Code Stats](stats.png)" >> README.new
           cat loc_report.md >> README.new
           sed -n '//,$p' README.md >> README.new
           mv README.new README.md
@@ -49,7 +103,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update Code Analysis Table" || echo "No changes to commit"
-          # Use the PAT for pushing to bypass 403 errors
+          git add README.md stats.png
+          git commit -m "Update Stats and Graph" || echo "No changes"
           git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
