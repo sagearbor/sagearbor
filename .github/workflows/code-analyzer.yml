@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y cloc gh python3-matplotlib
+          sudo apt-get install -y cloc gh python3-matplotlib python3-dateutil
 
       - name: Run Analysis
         env:
@@ -26,27 +26,32 @@ jobs:
           cat << 'EOF' > analyzer.py
           import os, subprocess, json, base64
           import matplotlib.pyplot as plt
+          from datetime import datetime
 
           OWNER = os.getenv("REPO_OWNER")
           
-          # ---------------------------------------------------------
-          # THE FIX: Base64 decode markers to bypass shell stripping
-          # ---------------------------------------------------------
-          # ""
+          # Base64 decode markers to bypass shell stripping
           START_MARKER = base64.b64decode("PCEtLSBMT0NfU1RBUlQgLS0+").decode('utf-8')
-          # ""
           END_MARKER = base64.b64decode("PCEtLSBMT0NfRU5EIC0tPg==").decode('utf-8')
 
           def run_cmd(cmd, cwd=None):
               try:
+                  # Removed --quiet so we can capture output, but cloc might print to stderr
                   return subprocess.check_output(cmd, shell=True, cwd=cwd, text=True).strip()
-              except Exception:
+              except subprocess.CalledProcessError as e:
+                  print(f"Error running {cmd}: {e}")
+                  return ""
+              except Exception as e:
+                  print(f"Unknown error: {e}")
                   return ""
 
           def main():
-              # 1. ANALYZE REPOS
               if not os.path.exists("/tmp/repos"): os.makedirs("/tmp/repos")
-              repos_json = run_cmd(f'gh repo list {OWNER} --source --json name --limit 100')
+              
+              # 1. FETCH REPOS WITH DATES
+              print("Fetching repository list...")
+              cmd = f'gh repo list {OWNER} --source --json name,createdAt --limit 100'
+              repos_json = run_cmd(cmd)
               
               if not repos_json:
                   print("No repositories found.")
@@ -57,53 +62,80 @@ jobs:
 
               for r in repos:
                   name = r['name']
+                  created_str = r['createdAt'] # Format: 2023-01-01T00:00:00Z
                   print(f"Analyzing {name}...")
                   
                   # Clone
+                  repo_path = f"/tmp/repos/{name}"
                   run_cmd(f'gh repo clone {OWNER}/{name} -- --depth 1', cwd="/tmp/repos")
-                  path = f"/tmp/repos/{name}"
                   
-                  if os.path.exists(path):
-                      # Count Lines (Files, LOC)
-                      cloc_out = run_cmd(f'cloc "{path}" --csv --quiet --exclude-dir=node_modules,vendor')
+                  if os.path.exists(repo_path):
+                      # A. Count LOC using JSON output (More robust)
+                      # We look for ANY code, excluding standard junk folders
+                      cloc_cmd = f'cloc "{repo_path}" --json --exclude-dir=node_modules,vendor,dist,build,.github'
+                      cloc_out = run_cmd(cloc_cmd)
+                      
                       files, loc = 0, 0
-                      for line in cloc_out.splitlines():
-                          if line.startswith("SUM"):
-                              p = line.split(',')
-                              files, loc = p[1], p[4]
+                      try:
+                          data = json.loads(cloc_out)
+                          # SUM is the last entry in the JSON structure
+                          if 'SUM' in data:
+                              files = data['SUM']['nFiles']
+                              loc = data['SUM']['code']
+                      except Exception as e:
+                          print(f"Warning: Could not parse cloc JSON for {name}. It might be empty. ({e})")
+
+                      # B. Count Tests
+                      # Look for test functions or markers in .py files
+                      test_cmd = f'grep -rE "def test_|@pytest.mark" "{repo_path}" --include="*.py" | wc -l'
+                      tests = run_cmd(test_cmd)
                       
-                      # Count Tests
-                      tests = run_cmd(f'grep -rE "def test_|@pytest.mark" "{path}" --include="*.py" | wc -l')
-                      
+                      # Parse Date for Sorting
+                      try:
+                          dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
+                          date_display = dt.strftime("%Y-%m-%d")
+                      except:
+                          dt = datetime.min
+                          date_display = created_str
+
                       results.append({
                           "Repo": name, 
-                          "Files": int(files) if files else 0, 
-                          "Tests": int(tests) if tests else 0, 
-                          "LOC": int(loc) if loc else 0
+                          "Created": date_display,
+                          "dt_obj": dt,
+                          "Files": int(files), 
+                          "Tests": int(tests) if tests.strip() else 0, 
+                          "LOC": int(loc)
                       })
                       
-                      # Cleanup to save space
-                      run_cmd(f'rm -rf "{path}"')
+                      run_cmd(f'rm -rf "{repo_path}"')
 
               if not results: return
               
-              # Sort by LOC Descending
-              results = sorted(results, key=lambda x: x['LOC'], reverse=True)
-
-              # 2. GENERATE TABLE
-              table = "| Repo | Files | Tests | LOC |\n|:---|---:|---:|---:|\n"
-              for res in results:
-                  table += f"| {res['Repo']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n"
-
-              # 3. GENERATE GRAPH (Top 10)
-              top_n = results[:10]
-              plt.figure(figsize=(10, 6))
-              plt.barh([r['Repo'] for r in top_n], [r['LOC'] for r in top_n], color='#2ea44f')
+              # 2. GENERATE GRAPH (Sorted by Creation Date: Oldest -> Newest)
+              # Sort by datetime object for the graph
+              results_by_date = sorted(results, key=lambda x: x['dt_obj'])
+              
+              # We plot all or top 15 to keep it readable
+              graph_data = results_by_date[-15:] 
+              
+              names = [r['Repo'] for r in graph_data]
+              locs = [r['LOC'] for r in graph_data]
+              
+              plt.figure(figsize=(10, 8)) # Taller figure
+              # Create horizontal bar chart
+              plt.barh(names, locs, color='#2ea44f')
               plt.xlabel('Lines of Code')
-              plt.title('Top 10 Repositories by LOC')
-              plt.gca().invert_yaxis()
+              plt.title('Repository Growth (Ordered by Creation Date)')
               plt.tight_layout()
               plt.savefig('stats.png')
+
+              # 3. GENERATE TABLE (Sorted by Creation Date for User Preference)
+              # Sort Newest First for the table
+              results_table_order = sorted(results, key=lambda x: x['dt_obj'], reverse=True)
+              
+              table = "| Repo | Created | Files | Tests | LOC |\n|:---|:---|---:|---:|---:|\n"
+              for res in results_table_order:
+                  table += f"| {res['Repo']} | {res['Created']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n"
 
               # 4. UPDATE README
               new_section = f"{START_MARKER}\n### Lines of Code Visualized\n![Code Stats](stats.png)\n\n{table}\n{END_MARKER}"
@@ -113,14 +145,12 @@ jobs:
                   with open("README.md", "r") as f:
                       readme_content = f.read()
               
-              # If markers exist, replace content between them
               if START_MARKER in readme_content and END_MARKER in readme_content:
                   parts = readme_content.split(START_MARKER)
                   before = parts[0]
                   after = parts[1].split(END_MARKER)[1]
                   final_readme = before + new_section + after
               else:
-                  # If no markers, append to bottom
                   final_readme = readme_content + "\n\n" + new_section
 
               with open("README.md", "w") as f:
@@ -137,5 +167,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md stats.png
-          git commit -m "Update Stats Table and Graph" || echo "No changes to commit"
+          git commit -m "Update Code Stats" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
