@@ -101,7 +101,11 @@ jobs:
                   
                   if os.path.exists(repo_path):
                       # A. Count LOC using JSON
-                      cloc_cmd = f'cloc "{repo_path}" --json --exclude-dir=node_modules,vendor,dist,build,.github'
+                      # -----------------------------------------------------------------------
+                      # NOTE: I added --exclude-ext=txt,pdf below to ignore data files.
+                      # To include them again, simply remove "--exclude-ext=txt,pdf" from this line.
+                      # -----------------------------------------------------------------------
+                      cloc_cmd = f'cloc "{repo_path}" --json --exclude-ext=txt,pdf --exclude-dir=node_modules,vendor,dist,build,.github'
                       cloc_out = run_cmd(cloc_cmd)
                       
                       files, loc = 0, 0
@@ -198,5 +202,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md stats.png
-          git commit -m "Update Bubble Chart and Stack Info" || echo "No changes to commit"
+          git commit -m "Update Code Stats (Excluded .txt/pdf)" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
