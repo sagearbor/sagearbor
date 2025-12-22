@@ -26,6 +26,7 @@ jobs:
           cat << 'EOF' > analyzer.py
           import os, subprocess, json, base64
           import matplotlib.pyplot as plt
+          import matplotlib.dates as mdates
           from datetime import datetime
 
           OWNER = os.getenv("REPO_OWNER")
@@ -36,14 +37,43 @@ jobs:
 
           def run_cmd(cmd, cwd=None):
               try:
-                  # Removed --quiet so we can capture output, but cloc might print to stderr
                   return subprocess.check_output(cmd, shell=True, cwd=cwd, text=True).strip()
-              except subprocess.CalledProcessError as e:
-                  print(f"Error running {cmd}: {e}")
+              except Exception:
                   return ""
-              except Exception as e:
-                  print(f"Unknown error: {e}")
-                  return ""
+
+          def detect_stack(repo_path, cloc_data):
+              stack = set()
+              # 1. Languages from CLOC
+              if cloc_data and 'SUM' in cloc_data:
+                  for lang, details in cloc_data.items():
+                      if lang not in ['header', 'SUM'] and details['code'] > 50:
+                          stack.add(lang)
+
+              # 2. Framework Scan (Python)
+              py_indicators = ["requirements.txt", "pyproject.toml", "setup.py"]
+              py_content = ""
+              for f in py_indicators:
+                  fp = os.path.join(repo_path, f)
+                  if os.path.exists(fp):
+                       try: py_content += open(fp, 'r', errors='ignore').read().lower()
+                       except: pass
+              
+              if "fastapi" in py_content: stack.add("FastAPI")
+              if "streamlit" in py_content: stack.add("Streamlit")
+              if "django" in py_content: stack.add("Django")
+              if "flask" in py_content: stack.add("Flask")
+              
+              # 3. Framework Scan (JS/Node)
+              pkg_json = os.path.join(repo_path, "package.json")
+              if os.path.exists(pkg_json):
+                  try:
+                      js_content = open(pkg_json, 'r', errors='ignore').read().lower()
+                      if "react" in js_content: stack.add("React")
+                      if "vue" in js_content: stack.add("Vue")
+                      if "next" in js_content: stack.add("Next.js")
+                  except: pass
+
+              return ", ".join(sorted(list(stack)))
 
           def main():
               if not os.path.exists("/tmp/repos"): os.makedirs("/tmp/repos")
@@ -62,7 +92,7 @@ jobs:
 
               for r in repos:
                   name = r['name']
-                  created_str = r['createdAt'] # Format: 2023-01-01T00:00:00Z
+                  created_str = r['createdAt']
                   print(f"Analyzing {name}...")
                   
                   # Clone
@@ -70,80 +100,83 @@ jobs:
                   run_cmd(f'gh repo clone {OWNER}/{name} -- --depth 1', cwd="/tmp/repos")
                   
                   if os.path.exists(repo_path):
-                      # A. Count LOC using JSON output (More robust)
-                      # We look for ANY code, excluding standard junk folders
+                      # A. Count LOC using JSON
                       cloc_cmd = f'cloc "{repo_path}" --json --exclude-dir=node_modules,vendor,dist,build,.github'
                       cloc_out = run_cmd(cloc_cmd)
                       
                       files, loc = 0, 0
+                      cloc_data = None
                       try:
-                          data = json.loads(cloc_out)
-                          # SUM is the last entry in the JSON structure
-                          if 'SUM' in data:
-                              files = data['SUM']['nFiles']
-                              loc = data['SUM']['code']
-                      except Exception as e:
-                          print(f"Warning: Could not parse cloc JSON for {name}. It might be empty. ({e})")
+                          cloc_data = json.loads(cloc_out)
+                          if 'SUM' in cloc_data:
+                              files = cloc_data['SUM']['nFiles']
+                              loc = cloc_data['SUM']['code']
+                      except: pass
 
                       # B. Count Tests
-                      # Look for test functions or markers in .py files
                       test_cmd = f'grep -rE "def test_|@pytest.mark" "{repo_path}" --include="*.py" | wc -l'
-                      tests = run_cmd(test_cmd)
+                      tests_str = run_cmd(test_cmd)
+                      tests = int(tests_str) if tests_str.strip() else 0
                       
-                      # Parse Date for Sorting
-                      try:
-                          dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
-                          date_display = dt.strftime("%Y-%m-%d")
-                      except:
-                          dt = datetime.min
-                          date_display = created_str
+                      # C. Detect Stack
+                      stack_str = detect_stack(repo_path, cloc_data)
 
+                      # Parse Date
+                      try: dt = datetime.strptime(created_str, "%Y-%m-%dT%H:%M:%SZ")
+                      except: dt = datetime.min
+                      
                       results.append({
                           "Repo": name, 
-                          "Created": date_display,
+                          "Created": dt.strftime("%Y-%m-%d"),
                           "dt_obj": dt,
                           "Files": int(files), 
-                          "Tests": int(tests) if tests.strip() else 0, 
-                          "LOC": int(loc)
+                          "Tests": tests, 
+                          "LOC": int(loc),
+                          "Stack": stack_str
                       })
-                      
                       run_cmd(f'rm -rf "{repo_path}"')
 
               if not results: return
               
-              # 2. GENERATE GRAPH (Sorted by Creation Date: Oldest -> Newest)
-              # Sort by datetime object for the graph
-              results_by_date = sorted(results, key=lambda x: x['dt_obj'])
-              
-              # We plot all or top 15 to keep it readable
-              graph_data = results_by_date[-15:] 
-              
-              names = [r['Repo'] for r in graph_data]
-              locs = [r['LOC'] for r in graph_data]
-              
-              plt.figure(figsize=(10, 8)) # Taller figure
-              # Create horizontal bar chart
-              plt.barh(names, locs, color='#2ea44f')
-              plt.xlabel('Lines of Code')
-              plt.title('Repository Growth (Ordered by Creation Date)')
-              plt.tight_layout()
-              plt.savefig('stats.png')
+              # 2. GENERATE BUBBLE CHART
+              graph_data = [r for r in results if r['LOC'] > 0]
+              if graph_data:
+                  dates = [r['dt_obj'] for r in graph_data]
+                  locs = [r['LOC'] for r in graph_data]
+                  test_counts = [r['Tests'] for r in graph_data]
+                  names = [r['Repo'] for r in graph_data]
 
-              # 3. GENERATE TABLE (Sorted by Creation Date for User Preference)
-              # Sort Newest First for the table
+                  sizes = [100 + (t * 5) for t in test_counts]
+
+                  plt.figure(figsize=(12, 7))
+                  plt.scatter(dates, locs, s=sizes, alpha=0.6, color='#2ea44f', edgecolors='black')
+
+                  plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m'))
+                  plt.gcf().autofmt_xdate()
+
+                  for i, txt in enumerate(names):
+                      plt.annotate(txt, (dates[i], locs[i]), xytext=(5, 5), textcoords='offset points', fontsize=8)
+
+                  plt.xlabel('Creation Date')
+                  plt.ylabel('Lines of Code')
+                  plt.title('Repo Growth & Test Coverage (Bubble Size = Test Count)')
+                  plt.grid(True, linestyle='--', alpha=0.7)
+                  plt.tight_layout()
+                  plt.savefig('stats.png')
+
+              # 3. GENERATE TABLE (Sorted Newest First, Formatted Numbers)
               results_table_order = sorted(results, key=lambda x: x['dt_obj'], reverse=True)
-              
-              table = "| Repo | Created | Files | Tests | LOC |\n|:---|:---|---:|---:|---:|\n"
+              table = "| Repo | Created | Stack | Files | Tests | LOC |\n|:---|:---|:---|---:|---:|---:|\n"
               for res in results_table_order:
-                  table += f"| {res['Repo']} | {res['Created']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n"
+                  # Use {:,} to format numbers with commas (e.g. 1,000)
+                  table += f"| {res['Repo']} | {res['Created']} | {res['Stack']} | {res['Files']:,} | {res['Tests']:,} | {res['LOC']:,} |\n"
 
               # 4. UPDATE README
-              new_section = f"{START_MARKER}\n### Lines of Code Visualized\n![Code Stats](stats.png)\n\n{table}\n{END_MARKER}"
+              new_section = f"{START_MARKER}\n### Codebase Visualization\n![Code Stats](stats.png)\n\n{table}\n{END_MARKER}"
               
               readme_content = ""
               if os.path.exists("README.md"):
-                  with open("README.md", "r") as f:
-                      readme_content = f.read()
+                  with open("README.md", "r") as f: readme_content = f.read()
               
               if START_MARKER in readme_content and END_MARKER in readme_content:
                   parts = readme_content.split(START_MARKER)
@@ -153,9 +186,7 @@ jobs:
               else:
                   final_readme = readme_content + "\n\n" + new_section
 
-              with open("README.md", "w") as f:
-                  f.write(final_readme)
-              print("README updated successfully.")
+              with open("README.md", "w") as f: f.write(final_readme)
 
           if __name__ == "__main__":
               main()
@@ -167,5 +198,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md stats.png
-          git commit -m "Update Code Stats" || echo "No changes to commit"
+          git commit -m "Update Bubble Chart and Stack Info" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
