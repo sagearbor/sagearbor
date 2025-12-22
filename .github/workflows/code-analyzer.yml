@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run GitHub Code Analyzer
-        uses: arhamkhnz/github-code-analyzer@v1.1
+        uses: arhamkhnz/github-code-analyzer@v1 # The version was updated from v1.1 to v1
         with:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           # Create a PAT (classic) with 'repo' scope to include private repos
