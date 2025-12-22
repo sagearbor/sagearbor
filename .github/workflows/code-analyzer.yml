@@ -23,27 +23,32 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
+          S_MARKER: ""
+          E_MARKER: ""
         run: |
           cat << 'EOF' > analyzer.py
           import os, subprocess, json
           import matplotlib.pyplot as plt
 
           OWNER = os.getenv("REPO_OWNER")
-          # Using unique strings that won't be stripped by the shell
-          START_MARKER = ""
-          END_MARKER = ""
+          START_MARKER = os.getenv("S_MARKER")
+          END_MARKER = os.getenv("E_MARKER")
 
           def run_cmd(cmd, cwd=None):
               try:
                   return subprocess.check_output(cmd, shell=True, cwd=cwd, text=True).strip()
-              except:
+              except Exception as e:
+                  print(f"Command failed: {cmd}")
                   return ""
 
           def main():
               # 1. ANALYZE REPOS
               if not os.path.exists("/tmp/repos"): os.makedirs("/tmp/repos")
               repos_json = run_cmd(f'gh repo list {OWNER} --source --json name --limit 100')
-              if not repos_json: return
+              if not repos_json: 
+                  print("No repositories found.")
+                  return
+              
               repos = json.loads(repos_json)
               results = []
 
@@ -62,9 +67,15 @@ jobs:
                               files, loc = p[1], p[4]
                       
                       tests = run_cmd(f'grep -rE "def test_|@pytest.mark" "{path}" --include="*.py" | wc -l')
-                      results.append({"Repo": name, "Files": int(files), "Tests": int(tests or 0), "LOC": int(loc or 0)})
+                      results.append({
+                          "Repo": name, 
+                          "Files": int(files) if files else 0, 
+                          "Tests": int(tests) if tests else 0, 
+                          "LOC": int(loc) if loc else 0
+                      })
                       run_cmd(f'rm -rf "{path}"')
 
+              if not results: return
               results = sorted(results, key=lambda x: x['LOC'], reverse=True)
 
               # 2. GENERATE ASSETS
@@ -72,15 +83,15 @@ jobs:
               for res in results:
                   table += f"| {res['Repo']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n"
 
-              if results:
-                  top_n = results[:10]
-                  plt.figure(figsize=(10, 6))
-                  plt.barh([r['Repo'] for r in top_n], [r['LOC'] for r in top_n], color='#2ea44f')
-                  plt.xlabel('Lines of Code')
-                  plt.title('Top 10 Repositories by LOC')
-                  plt.gca().invert_yaxis()
-                  plt.tight_layout()
-                  plt.savefig('stats.png')
+              # Generate Graph
+              top_n = results[:10]
+              plt.figure(figsize=(10, 6))
+              plt.barh([r['Repo'] for r in top_n], [r['LOC'] for r in top_n], color='#2ea44f')
+              plt.xlabel('Lines of Code')
+              plt.title('Top 10 Repositories by LOC')
+              plt.gca().invert_yaxis()
+              plt.tight_layout()
+              plt.savefig('stats.png')
 
               # 3. UPDATE README
               new_section = f"{START_MARKER}\n### Lines of Code Visualized\n![Code Stats](stats.png)\n\n{table}\n{END_MARKER}"
@@ -91,14 +102,16 @@ jobs:
                       readme_content = f.read()
               
               if START_MARKER in readme_content and END_MARKER in readme_content:
-                  before = readme_content.split(START_MARKER)[0]
-                  after = readme_content.split(END_MARKER)[1]
+                  parts = readme_content.split(START_MARKER)
+                  before = parts[0]
+                  after = parts[1].split(END_MARKER)[1]
                   final_readme = before + new_section + after
               else:
                   final_readme = readme_content + "\n\n" + new_section
 
               with open("README.md", "w") as f:
                   f.write(final_readme)
+              print("README updated successfully.")
 
           if __name__ == "__main__":
               main()
@@ -110,5 +123,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md stats.png
-          git commit -m "Update Stats Table and Graph" || echo "No changes"
+          git commit -m "Update Stats Table and Graph" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
