@@ -15,18 +15,28 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y cloc gh
+          touch loc_report.txt # Ensure report file exists
 
-      - name: Fetch & Analyze ALL User Repositories
+      - name: Analyze CURRENT Repository (sagearbor)
+        run: |
+          echo "--- Analyzing current repo (${{ github.repository }} ---"
+          cloc . --exclude-dir=node_modules,.github,vendor --md >> loc_report.txt
+
+      - name: Fetch & Analyze OTHER Repositories
         # CRITICAL FIX: Pass GITHUB_TOKEN as an environment variable (GH_TOKEN)
         run: |
-          echo "Fetching and analyzing repositories for ${{ github.repository_owner }}"
+          mkdir /tmp/other_repos
+          cd /tmp/other_repos
           
-          # Use the GitHub CLI to clone and analyze all user repos (excluding forks)
+          # Iterate through ALL repos
           gh repo list ${{ github.repository_owner }} --source --json name | jq -r '.[].name' | while read repo_name; do
-            echo "--- Cloning and analyzing $repo_name ---"
-            git clone --depth 1 github.com{{ github.repository_owner }}/$repo_name.git
-            # Append markdown table format output to the report file
-            cloc $repo_name --exclude-dir=node_modules,vendor --md >> loc_report.txt
+            # Skip the current profile repo as it's already analyzed
+            if [ "$repo_name" != "${{ github.event.repository.name }}" ]; then
+              echo "--- Cloning and analyzing $repo_name ---"
+              git clone --depth 1 github.com{{ github.repository_owner }}/$repo_name.git
+              # Analyze the repo inside /tmp/other_repos directory
+              cloc $repo_name --exclude-dir=node_modules,vendor --md >> /home/runner/work/sagearbor/sagearbor/loc_report.txt
+            fi
           done
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }} # The secret you created
@@ -34,12 +44,7 @@ jobs:
       - name: Append Report to README
         run: |
           echo "## Lines of Code Report" >> README.md
-          # Only proceed if the file was created
-          if [ -f loc_report.txt ]; then
-            cat loc_report.txt >> README.md
-          else
-            echo "No repositories found or report was empty." >> README.md
-          fi
+          cat loc_report.txt >> README.md
 
       - name: Commit Report Update
         uses: actions-js/push@v1
