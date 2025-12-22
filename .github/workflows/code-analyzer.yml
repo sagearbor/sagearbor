@@ -17,48 +17,54 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y cloc gh python3-matplotlib
-          pip install pandas
 
       - name: Run Analysis
         env:
           GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
-          S_MARKER: ""
-          E_MARKER: ""
         run: |
           cat << 'EOF' > analyzer.py
-          import os, subprocess, json
+          import os, subprocess, json, base64
           import matplotlib.pyplot as plt
 
           OWNER = os.getenv("REPO_OWNER")
-          START_MARKER = os.getenv("S_MARKER")
-          END_MARKER = os.getenv("E_MARKER")
+          
+          # ---------------------------------------------------------
+          # THE FIX: Base64 decode markers to bypass shell stripping
+          # ---------------------------------------------------------
+          # ""
+          START_MARKER = base64.b64decode("PCEtLSBMT0NfU1RBUlQgLS0+").decode('utf-8')
+          # ""
+          END_MARKER = base64.b64decode("PCEtLSBMT0NfRU5EIC0tPg==").decode('utf-8')
 
           def run_cmd(cmd, cwd=None):
               try:
                   return subprocess.check_output(cmd, shell=True, cwd=cwd, text=True).strip()
-              except Exception as e:
-                  print(f"Command failed: {cmd}")
+              except Exception:
                   return ""
 
           def main():
               # 1. ANALYZE REPOS
               if not os.path.exists("/tmp/repos"): os.makedirs("/tmp/repos")
               repos_json = run_cmd(f'gh repo list {OWNER} --source --json name --limit 100')
-              if not repos_json: 
+              
+              if not repos_json:
                   print("No repositories found.")
                   return
-              
+
               repos = json.loads(repos_json)
               results = []
 
               for r in repos:
                   name = r['name']
                   print(f"Analyzing {name}...")
+                  
+                  # Clone
                   run_cmd(f'gh repo clone {OWNER}/{name} -- --depth 1', cwd="/tmp/repos")
                   path = f"/tmp/repos/{name}"
                   
                   if os.path.exists(path):
+                      # Count Lines (Files, LOC)
                       cloc_out = run_cmd(f'cloc "{path}" --csv --quiet --exclude-dir=node_modules,vendor')
                       files, loc = 0, 0
                       for line in cloc_out.splitlines():
@@ -66,24 +72,30 @@ jobs:
                               p = line.split(',')
                               files, loc = p[1], p[4]
                       
+                      # Count Tests
                       tests = run_cmd(f'grep -rE "def test_|@pytest.mark" "{path}" --include="*.py" | wc -l')
+                      
                       results.append({
                           "Repo": name, 
                           "Files": int(files) if files else 0, 
                           "Tests": int(tests) if tests else 0, 
                           "LOC": int(loc) if loc else 0
                       })
+                      
+                      # Cleanup to save space
                       run_cmd(f'rm -rf "{path}"')
 
               if not results: return
+              
+              # Sort by LOC Descending
               results = sorted(results, key=lambda x: x['LOC'], reverse=True)
 
-              # 2. GENERATE ASSETS
+              # 2. GENERATE TABLE
               table = "| Repo | Files | Tests | LOC |\n|:---|---:|---:|---:|\n"
               for res in results:
                   table += f"| {res['Repo']} | {res['Files']} | {res['Tests']} | {res['LOC']} |\n"
 
-              # Generate Graph
+              # 3. GENERATE GRAPH (Top 10)
               top_n = results[:10]
               plt.figure(figsize=(10, 6))
               plt.barh([r['Repo'] for r in top_n], [r['LOC'] for r in top_n], color='#2ea44f')
@@ -93,7 +105,7 @@ jobs:
               plt.tight_layout()
               plt.savefig('stats.png')
 
-              # 3. UPDATE README
+              # 4. UPDATE README
               new_section = f"{START_MARKER}\n### Lines of Code Visualized\n![Code Stats](stats.png)\n\n{table}\n{END_MARKER}"
               
               readme_content = ""
@@ -101,12 +113,14 @@ jobs:
                   with open("README.md", "r") as f:
                       readme_content = f.read()
               
+              # If markers exist, replace content between them
               if START_MARKER in readme_content and END_MARKER in readme_content:
                   parts = readme_content.split(START_MARKER)
                   before = parts[0]
                   after = parts[1].split(END_MARKER)[1]
                   final_readme = before + new_section + after
               else:
+                  # If no markers, append to bottom
                   final_readme = readme_content + "\n\n" + new_section
 
               with open("README.md", "w") as f:
