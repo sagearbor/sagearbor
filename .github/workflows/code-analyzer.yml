@@ -1,8 +1,8 @@
-name: GitHub Code Analyzer
+name: My Independent Code Analyzer
 on:
   schedule:
     - cron: '0 0 * * *' # Runs daily at midnight
-  workflow_dispatch: # Allows manual trigger from Actions tab
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   analyze-code:
@@ -11,8 +11,27 @@ jobs:
       - name: Checkout profile repository
         uses: actions/checkout@v4
 
-      - name: Run GitHub Code Analyzer
-        uses: arhamkhnz/github-code-analyzer@main # Changed from @v1 to @main
+      - name: Install cloc
+        run: sudo apt-get update && sudo apt-get install -y cloc
+
+      - name: Fetch & Analyze ALL User Repositories
+        run: |
+          # Use the GitHub CLI to clone all user repos (excluding forks)
+          gh repo list ${{ github.repository_owner }} --source --json name | jq -r '.[].name' | while read repo_name; do
+            echo "--- Cloning and analyzing $repo_name ---"
+            git clone --depth 1 github.com{{ github.repository_owner }}/$repo_name.git
+            cloc $repo_name --exclude-dir=node_modules,vendor >> loc_report.txt
+          done
+
+      - name: Append Report to README (Optional)
+        # This step appends the simple text report to your README
+        run: |
+          echo "## Lines of Code Report" >> README.md
+          cat loc_report.txt >> README.md
+
+      - name: Commit Report Update
+        # Commits the updated README file back to your repo
+        uses: actions-js/push@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          # Create a PAT (classic) with 'repo' scope to include private repos
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          branch: main
