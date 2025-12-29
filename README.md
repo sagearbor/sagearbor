@@ -22,8 +22,9 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| vocal-align | 2025-12-28 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 148 | 0 | 26,966 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 61 |
-| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 22 | 0 | 12,331 |
+| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 60 | 0 | 19,143 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 2,785 | 2,962 | 762,102 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
