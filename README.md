@@ -23,7 +23,7 @@ Here are some ideas to get you started:
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
-| vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 291 | 0 | 106,407 |
+| vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 232 | 0 | 97,341 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 63 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 60 | 0 | 19,143 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 2,785 | 2,962 | 762,102 |
