@@ -73,10 +73,8 @@ Here are some ideas to get you started:
 | mesh-stripping | 2019-11-21 | CSV | 3 | 0 | 242,281 |
 | webpage-arborlife-angular | 2017-12-15 | HTML, JSON, JavaScript, TypeScript | 30 | 0 | 10,927 |
 | nsNegotiate | 2017-08-13 |  | 1 | 0 | 11 |
-| tt | 2017-08-04 | HTML, JSON, JavaScript, TypeScript, XML | 113 | 0 | 3,670 |
 | nativescript-template-ng-groceries | 2017-06-16 | JSON, TypeScript, XML | 21 | 0 | 601 |
 | nsFitnessApp | 2017-04-18 | CSS, HTML, JSON, JavaScript, Markdown, TypeScript, XML | 124 | 0 | 4,730 |
-| tempp | 2017-04-06 |  | 0 | 0 | 0 |
 | nsFitnessApp02 | 2017-03-28 | CSS, JSON, JavaScript, XML | 22 | 0 | 1,537 |
 | medObjs | 2016-04-12 | CSS, HTML, PHP | 15 | 0 | 1,834 |
 | nevernote | 2015-10-28 | ERB, HTML, Ruby, SCSS, YAML | 50 | 0 | 831 |
