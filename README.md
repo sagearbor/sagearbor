@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| ai-skill-eval-kit | 2026-01-20 | Markdown | 2 | 0 | 214 |
 | megaCity-rotating | 2026-01-11 | JSON, Markdown, React, TypeScript | 33 | 0 | 10,288 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
