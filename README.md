@@ -23,7 +23,7 @@ Here are some ideas to get you started:
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
 | contextFlow-upgrade | 2026-02-06 |  | 2 | 0 | 55 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML | 73 | 0 | 22,274 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 196 | 0 | 50,994 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, Markdown, React, TypeScript | 33 | 0 | 10,288 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
