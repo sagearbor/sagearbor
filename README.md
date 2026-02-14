@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| hecvat-assess | 2026-02-13 | JSON, Markdown, Python, YAML | 17 | 43 | 11,533 |
 | contextFlow-upgrade | 2026-02-06 |  | 2 | 0 | 55 |
 | contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 196 | 0 | 50,994 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
