@@ -22,6 +22,8 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
+| portable-agent-a2a-pipeline | 2026-02-26 | Markdown, Python | 14 | 0 | 568 |
 | quorum | 2026-02-25 | JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 120 | 120 | 13,553 |
 | arborlife-webpage | 2026-02-23 |  | 1 | 0 | 2 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
@@ -33,7 +35,7 @@ Here are some ideas to get you started:
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 69 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 70 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 3,105 | 3,383 | 1,041,487 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
