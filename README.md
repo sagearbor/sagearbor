@@ -28,7 +28,7 @@ Here are some ideas to get you started:
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 7 | 0 | 1,373 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
 | portable-agent-a2a-pipeline | 2026-02-26 | Markdown, Python | 14 | 0 | 568 |
-| quorum | 2026-02-25 | Bourne Shell, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 173 | 120 | 19,584 |
+| quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 177 | 120 | 21,039 |
 | arborlife-webpage | 2026-02-23 |  | 1 | 0 | 2 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
