@@ -22,6 +22,8 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| aact-reverse-engineering | 2026-03-25 | Markdown | 2 | 0 | 161 |
+| sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 38 | 0 | 7,796 |
 | music-CYOA | 2026-03-23 |  | 1 | 0 | 2 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
 | eoe | 2026-03-10 | Markdown, Python | 16 | 0 | 2,125 |
@@ -34,7 +36,7 @@ Here are some ideas to get you started:
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 199 | 0 | 72,637 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 199 | 0 | 72,111 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, Markdown, React, TypeScript | 34 | 0 | 10,507 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
