@@ -23,14 +23,14 @@ Here are some ideas to get you started:
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
 | aact-reverse-engineering | 2026-03-25 | Markdown | 2 | 0 | 161 |
-| sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 38 | 0 | 7,796 |
+| sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 |  | 1 | 0 | 2 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
 | eoe | 2026-03-10 | Markdown, Python | 16 | 0 | 2,125 |
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 7 | 0 | 1,373 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
-| portable-agent-a2a-pipeline | 2026-02-26 | HTML, JSON, Markdown, Python | 54 | 0 | 8,292 |
+| portable-agent-a2a-pipeline | 2026-02-26 | HTML, JSON, Markdown, Python | 71 | 0 | 8,589 |
 | quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 257 | 404 | 34,506 |
 | arborlife-webpage | 2026-02-23 | HTML | 7 | 0 | 2,395 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
@@ -42,7 +42,7 @@ Here are some ideas to get you started:
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 77 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 79 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 3,105 | 3,383 | 1,041,487 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
