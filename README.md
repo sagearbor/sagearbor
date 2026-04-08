@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| irb_agent_dcri | 2026-04-07 | Markdown | 5 | 0 | 97 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
