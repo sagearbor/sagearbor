@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| FitRival | 2026-05-02 | Dart, Markdown | 10 | 0 | 727 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 352 | 1,146 | 45,081 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
 | irb_agent_dcri | 2026-04-07 | Markdown | 5 | 0 | 97 |
@@ -34,7 +35,7 @@ Here are some ideas to get you started:
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 7 | 0 | 1,373 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
 | portable-agent-a2a-pipeline | 2026-02-26 | HTML, JSON, Markdown, Python, YAML | 78 | 0 | 11,050 |
-| quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 269 | 404 | 36,719 |
+| quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 270 | 404 | 36,848 |
 | arborlife-webpage | 2026-02-23 | HTML | 7 | 0 | 2,395 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
