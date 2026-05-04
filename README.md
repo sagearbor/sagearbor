@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| FitRival | 2026-05-02 | Dart, Markdown | 10 | 0 | 727 |
+| FitRival | 2026-05-02 | Dart, Markdown | 12 | 0 | 1,281 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 352 | 1,146 | 45,081 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
 | irb_agent_dcri | 2026-04-07 | Markdown | 5 | 0 | 97 |
@@ -46,7 +46,7 @@ Here are some ideas to get you started:
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 82 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 83 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML, diff | 3,599 | 3,864 | 1,132,618 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
