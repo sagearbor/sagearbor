@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| FitRival | 2026-05-02 | Dart, Markdown | 12 | 0 | 1,281 |
+| FitRival | 2026-05-02 | Dart, Markdown | 35 | 0 | 4,937 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 352 | 1,146 | 45,081 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
 | irb_agent_dcri | 2026-04-07 | Markdown | 5 | 0 | 97 |
