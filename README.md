@@ -27,7 +27,7 @@ Here are some ideas to get you started:
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 122 | 0 | 15,166 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 415 | 1,462 | 58,144 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
-| irb_agent_dcri | 2026-04-07 | Markdown | 5 | 0 | 97 |
+| irb_agent_dcri | 2026-04-07 | CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 176 | 325 | 21,514 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
@@ -36,13 +36,13 @@ Here are some ideas to get you started:
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
-| portable-agent-a2a-pipeline | 2026-02-26 | HTML, JSON, Markdown, Python, YAML | 78 | 0 | 11,050 |
+| portable-agent-a2a-pipeline | 2026-02-26 | HTML, JSON, Markdown, Python, YAML | 78 | 0 | 11,175 |
 | quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 411 | 921 | 75,842 |
 | arborlife-webpage | 2026-02-23 | HTML | 7 | 0 | 2,395 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 199 | 0 | 72,637 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 199 | 0 | 72,111 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, Markdown, React, TypeScript | 34 | 0 | 10,507 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
