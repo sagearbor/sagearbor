@@ -22,6 +22,9 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| dcri-ct-graph | 2026-06-07 | Markdown, Python, YAML | 18 | 16 | 921 |
+| dcri-a2a-core | 2026-06-07 | Markdown, Python | 11 | 17 | 585 |
+| dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 119 | 0 | 12,648 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 262 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 122 | 0 | 15,166 |
@@ -50,7 +53,7 @@ Here are some ideas to get you started:
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 85 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML, diff | 3,599 | 3,864 | 1,132,618 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML, diff | 3,760 | 3,926 | 1,195,913 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
