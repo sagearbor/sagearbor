@@ -40,7 +40,7 @@ Here are some ideas to get you started:
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
 | portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, Markdown, Python, YAML | 79 | 0 | 11,361 |
-| quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 411 | 921 | 75,842 |
+| quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 412 | 921 | 75,917 |
 | arborlife-webpage | 2026-02-23 | HTML | 7 | 0 | 2,395 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
@@ -53,7 +53,7 @@ Here are some ideas to get you started:
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 88 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML, diff | 3,761 | 3,926 | 1,195,920 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, XML, YAML, diff | 3,591 | 4,134 | 1,169,960 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
