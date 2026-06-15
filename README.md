@@ -27,7 +27,7 @@ Here are some ideas to get you started:
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 119 | 0 | 12,648 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
-| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 163 | 0 | 23,669 |
+| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 166 | 0 | 24,291 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 415 | 1,462 | 58,144 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
 | irb_agent_dcri | 2026-04-07 | CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 188 | 364 | 24,172 |
