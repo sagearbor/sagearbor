@@ -25,11 +25,11 @@ Here are some ideas to get you started:
 | dcri-ct-graph | 2026-06-07 | CSS, FastAPI, HTML, JavaScript, Markdown, Python, YAML | 26 | 24 | 1,940 |
 | dcri-a2a-core | 2026-06-07 | Markdown, Python | 11 | 17 | 585 |
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
-| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 119 | 0 | 12,648 |
+| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
-| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 166 | 0 | 24,291 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, Markdown, Python, TOML, YAML, make | 415 | 1,462 | 58,144 |
-| openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 290 | 0 | 70,298 |
+| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 171 | 0 | 24,951 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, HTML, Markdown, Python, TOML, YAML, make | 425 | 1,490 | 61,951 |
+| openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 297 | 0 | 70,724 |
 | irb_agent_dcri | 2026-04-07 | CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 188 | 364 | 24,172 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
@@ -70,9 +70,9 @@ Here are some ideas to get you started:
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
 | protocol-assistant | 2025-09-10 | Markdown | 2 | 0 | 307 |
 | dcri-gpt | 2025-09-09 | CSS, INI, JSON, JavaScript, Markdown, Python, TypeScript, YAML | 111 | 166 | 15,504 |
-| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python | 112 | 74 | 22,143 |
+| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 126 | 99 | 23,720 |
 | dcriCTdash | 2025-09-02 | Markdown, PowerShell, Python, TOML, YAML | 152 | 68 | 33,295 |
-| data-analyzer | 2025-08-21 | Bourne Shell, JSON, Markdown, Python, Streamlit, YAML | 58 | 93 | 12,268 |
+| data-analyzer | 2025-08-21 | Bourne Shell, JSON, Markdown, Python, Streamlit, YAML | 72 | 141 | 13,706 |
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
