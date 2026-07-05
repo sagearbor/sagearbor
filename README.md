@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
-| eoe | 2026-03-10 | Markdown, Python, YAML | 63 | 264 | 8,897 |
+| eoe | 2026-03-10 | Markdown, Python, YAML | 72 | 283 | 9,718 |
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
@@ -61,12 +61,12 @@ Here are some ideas to get you started:
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
 | env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,119 |
 | context-aware-ai-training | 2025-10-14 | Bourne Shell, DOS Batch, Markdown, Python | 27 | 20 | 4,425 |
-| mindshift | 2025-10-06 | FastAPI, JSON, Markdown, Python, TypeScript | 60 | 175 | 32,516 |
+| mindshift | 2025-10-06 | FastAPI, JSON, Markdown, Python, TypeScript | 62 | 224 | 21,401 |
 | test-llm-apis | 2025-09-29 | Bourne Shell, HTML, JSON, JavaScript, Markdown, YAML | 43 | 0 | 14,061 |
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | C++, CMake, Dart, Gradle, JSON, Markdown, Python, XML, YAML | 274 | 0 | 38,341 |
+| taskcaster-app | 2025-09-17 | C++, CMake, Dart, Gradle, HTML, JSON, Kotlin, Markdown, Python, Swift, XML, YAML | 354 | 0 | 52,549 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
