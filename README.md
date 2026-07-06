@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 178 | 0 | 27,322 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, HTML, Markdown, Python, SVG, TOML, YAML, make | 480 | 1,760 | 76,563 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 507 | 2,110 | 85,030 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 255 | 573 | 34,133 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
@@ -61,12 +61,12 @@ Here are some ideas to get you started:
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
 | env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,119 |
 | context-aware-ai-training | 2025-10-14 | Bourne Shell, DOS Batch, Markdown, Python | 27 | 20 | 4,425 |
-| mindshift | 2025-10-06 | FastAPI, JSON, Markdown, Python, TypeScript | 62 | 224 | 21,401 |
+| mindshift | 2025-10-06 | FastAPI, HTML, JSON, Markdown, Python, TypeScript | 66 | 370 | 24,274 |
 | test-llm-apis | 2025-09-29 | Bourne Shell, HTML, JSON, JavaScript, Markdown, YAML | 43 | 0 | 14,061 |
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | C++, CMake, Dart, Gradle, HTML, JSON, Kotlin, Markdown, Python, Swift, XML, YAML | 354 | 0 | 52,549 |
+| taskcaster-app | 2025-09-17 | C++, CMake, Dart, Gradle, HTML, JSON, Kotlin, Markdown, Python, Swift, XML, YAML | 382 | 0 | 54,956 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
