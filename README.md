@@ -30,7 +30,7 @@ Here are some ideas to get you started:
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 178 | 0 | 27,322 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 507 | 2,110 | 85,030 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 511 | 2,180 | 87,317 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 257 | 573 | 34,252 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
