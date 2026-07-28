@@ -25,7 +25,7 @@ Here are some ideas to get you started:
 | movieScript_firstAI | 2026-07-22 |  | 0 | 0 | 0 |
 | career-compass-starter | 2026-07-20 |  | 2 | 0 | 35 |
 | career-compass | 2026-07-20 | Markdown, Python | 15 | 0 | 674 |
-| cv-improve-skills | 2026-07-01 | HTML, Markdown, Python | 31 | 0 | 2,133 |
+| cv-improve-skills | 2026-07-01 | HTML, Markdown, Python | 27 | 0 | 1,811 |
 | skillsCC | 2026-06-21 | JSON, JavaScript, Markdown, Python | 33 | 40 | 2,521 |
 | dcri-ct-graph | 2026-06-07 | CSS, FastAPI, HTML, JavaScript, Markdown, Python, YAML | 26 | 24 | 1,940 |
 | dcri-a2a-core | 2026-06-07 | HTML, Markdown, Python | 27 | 53 | 6,520 |
@@ -33,7 +33,7 @@ Here are some ideas to get you started:
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 178 | 0 | 27,322 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 544 | 2,534 | 131,194 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 544 | 2,534 | 131,242 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 337 | 937 | 51,262 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
