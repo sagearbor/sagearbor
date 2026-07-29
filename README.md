@@ -22,6 +22,8 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| dcri-skills-internal | 2026-07-28 |  | 5 | 0 | 44 |
+| agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 31 | 0 | 3,770 |
 | movieScript_firstAI | 2026-07-22 |  | 0 | 0 | 0 |
 | career-compass-starter | 2026-07-20 |  | 2 | 0 | 35 |
 | career-compass | 2026-07-20 | Markdown, Python | 15 | 0 | 674 |
@@ -35,7 +37,7 @@ Here are some ideas to get you started:
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 178 | 0 | 27,322 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 544 | 2,534 | 131,242 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
-| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 337 | 937 | 51,262 |
+| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML | 339 | 940 | 51,454 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
@@ -58,7 +60,7 @@ Here are some ideas to get you started:
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 93 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 3,655 | 5,031 | 4,497,810 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 3,658 | 5,035 | 4,497,974 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
