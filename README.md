@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 |:---|:---|:---|---:|---:|---:|
 | sage_gen_testing | 2026-07-29 | Markdown | 4 | 0 | 90 |
 | dcri-skills-internal | 2026-07-28 |  | 5 | 0 | 44 |
-| research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 36 | 0 | 4,218 |
+| research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 50 | 0 | 6,667 |
 | movieScript_firstAI | 2026-07-22 |  | 0 | 0 | 0 |
 | career-compass-starter | 2026-07-20 |  | 2 | 0 | 35 |
 | career-compass | 2026-07-20 | Markdown, Python | 15 | 0 | 674 |
@@ -59,9 +59,9 @@ Here are some ideas to get you started:
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 95 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 96 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 3,677 | 5,071 | 4,500,365 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 3,700 | 5,224 | 4,508,329 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
@@ -78,9 +78,9 @@ Here are some ideas to get you started:
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
 | protocol-assistant | 2025-09-10 | Markdown | 2 | 0 | 307 |
 | dcri-gpt | 2025-09-09 | CSS, INI, JSON, JavaScript, Markdown, Python, TypeScript, YAML | 111 | 166 | 15,504 |
-| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 128 | 107 | 23,894 |
+| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 132 | 123 | 24,157 |
 | dcriCTdash | 2025-09-02 | Markdown, PowerShell, Python, TOML, YAML | 152 | 68 | 33,295 |
-| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 126 | 416 | 28,652 |
+| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 134 | 457 | 29,905 |
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
