@@ -22,10 +22,10 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| gauge | 2026-08-02 | Bourne Shell, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TypeScript, XML | 256 | 429 | 32,392 |
+| gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 347 | 456 | 41,701 |
 | sage_gen_testing | 2026-07-29 | Markdown | 4 | 0 | 90 |
 | dcri-skills-internal | 2026-07-28 |  | 5 | 0 | 44 |
-| research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 52 | 0 | 7,227 |
+| research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 53 | 0 | 7,399 |
 | movieScript_firstAI | 2026-07-22 |  | 0 | 0 | 0 |
 | career-compass-starter | 2026-07-20 |  | 2 | 0 | 35 |
 | career-compass | 2026-07-20 | Markdown, Python | 15 | 0 | 674 |
@@ -36,8 +36,8 @@ Here are some ideas to get you started:
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
-| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 178 | 0 | 27,322 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 544 | 2,534 | 131,242 |
+| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 201 | 0 | 30,323 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 544 | 2,540 | 131,350 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, YAML, diff | 370 | 1,081 | 57,158 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
