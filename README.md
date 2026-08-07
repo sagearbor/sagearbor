@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 386 | 527 | 45,964 |
+| gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 389 | 527 | 46,736 |
 | sage_gen_testing | 2026-07-29 | Markdown | 4 | 0 | 90 |
 | dcri-skills-internal | 2026-07-28 |  | 5 | 0 | 44 |
 | research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 53 | 0 | 7,399 |
