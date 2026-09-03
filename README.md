@@ -41,12 +41,12 @@ Here are some ideas to get you started:
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 209 | 0 | 31,342 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 618 | 3,253 | 149,777 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
-| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 591 | 2,391 | 128,800 |
+| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 606 | 2,544 | 136,721 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
-| eoe | 2026-03-10 | Markdown, Python, YAML | 72 | 283 | 9,718 |
+| eoe | 2026-03-10 | Markdown, Python, YAML | 85 | 343 | 11,367 |
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
