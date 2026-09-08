@@ -22,14 +22,14 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 19 | 0 | 3,626 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 19 | 0 | 3,019 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, Markdown | 3 | 0 | 671 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 379 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
 | sage_gen_testing | 2026-07-29 | Markdown | 4 | 0 | 90 |
 | dcri-skills-internal | 2026-07-28 |  | 5 | 0 | 44 |
 | research-agent-skills | 2026-07-28 | HTML, JSON, Markdown, Python | 57 | 0 | 7,772 |
-| movieScript_firstAI | 2026-07-22 |  | 0 | 0 | 0 |
+| movieScript_firstAI | 2026-07-22 | JSON, Markdown | 36 | 0 | 1,435 |
 | career-compass-starter | 2026-07-20 |  | 2 | 0 | 35 |
 | career-compass | 2026-07-20 | Markdown, Python | 15 | 0 | 674 |
 | cv-improve-skills | 2026-07-01 | HTML, Markdown, Python | 27 | 0 | 1,811 |
@@ -40,9 +40,9 @@ Here are some ideas to get you started:
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 154 | 0 | 17,722 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 209 | 0 | 31,342 |
-| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 621 | 3,253 | 149,799 |
+| faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 622 | 3,289 | 151,864 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 336 | 0 | 74,387 |
-| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 606 | 2,544 | 136,721 |
+| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 604 | 2,555 | 135,578 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
@@ -59,11 +59,11 @@ Here are some ideas to get you started:
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
 | contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 203 | 0 | 73,155 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
-| megaCity-rotating | 2026-01-11 | JSON, Markdown, React, TypeScript | 34 | 0 | 10,507 |
+| megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 61 | 0 | 11,051 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 99 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 100 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, React, TypeScript, YAML | 62 | 0 | 19,453 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 4,116 | 5,702 | 4,613,387 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
