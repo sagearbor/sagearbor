@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 4,446 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 5,057 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 4 | 0 | 1,692 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 1,137 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
@@ -37,7 +37,7 @@ Here are some ideas to get you started:
 | dcri-ct-graph | 2026-06-07 | CSS, FastAPI, HTML, JavaScript, Markdown, Python, YAML | 26 | 24 | 1,940 |
 | dcri-a2a-core | 2026-06-07 | HTML, Markdown, Python | 27 | 53 | 6,520 |
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
-| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 222 | 0 | 26,339 |
+| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 238 | 0 | 29,684 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 219 | 0 | 32,293 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 650 | 3,295 | 157,003 |
@@ -76,7 +76,7 @@ Here are some ideas to get you started:
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, Kotlin, Markdown, Python, Swift, XML, YAML | 446 | 0 | 68,264 |
+| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, Kotlin, Markdown, Python, Swift, XML, YAML | 449 | 0 | 68,650 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
@@ -88,7 +88,7 @@ Here are some ideas to get you started:
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
-| chatnbook | 2025-08-11 | CSS, HTML, JSON, JavaScript, Markdown, PHP, Python, SQL, TypeScript, YAML | 329 | 24 | 23,346 |
+| chatnbook | 2025-08-11 | CSS, HTML, JSON, JavaScript, Markdown, PHP, Python, SQL, TypeScript, YAML | 352 | 35 | 28,904 |
 | dcri_ai_Azure_home | 2025-08-04 | CSS, HTML, JSON, JavaScript, Markdown | 7 | 0 | 946 |
 | Medschool_ArborTester | 2025-08-03 | INI, JSON, JavaScript, Markdown, Python, YAML | 60 | 26 | 9,785 |
 | multiAgent_AgileTeam_Start | 2025-08-02 | Markdown, Python | 21 | 3 | 1,635 |
