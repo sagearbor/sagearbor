@@ -42,12 +42,12 @@ Here are some ideas to get you started:
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, Markdown, Python, XML, YAML | 219 | 0 | 32,293 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 678 | 3,421 | 163,267 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 363 | 0 | 79,657 |
-| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 618 | 2,660 | 139,276 |
+| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 624 | 2,717 | 140,475 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
-| eoe | 2026-03-10 | Markdown, Python, YAML | 101 | 375 | 13,797 |
+| eoe | 2026-03-10 | Markdown, Python, YAML | 118 | 397 | 16,049 |
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
@@ -64,7 +64,7 @@ Here are some ideas to get you started:
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 100 |
-| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | HTML, JSON, Markdown, Python, React, TypeScript, YAML | 367 | 0 | 101,148 |
+| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 671 | 0 | 955,969 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 4,116 | 5,702 | 4,613,387 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
