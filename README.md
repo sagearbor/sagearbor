@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 6,157 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 6,312 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 1,137 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
 | coord-transition | 2026-03-11 | HTML | 5 | 0 | 341 |
-| eoe | 2026-03-10 | Markdown, Python, YAML | 118 | 397 | 16,049 |
+| eoe | 2026-03-10 | HTML, Markdown, Python, TeX, YAML | 126 | 397 | 16,592 |
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
@@ -64,14 +64,14 @@ Here are some ideas to get you started:
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 100 |
-| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 671 | 0 | 955,969 |
+| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 760 | 28 | 1,208,136 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 4,116 | 5,702 | 4,613,387 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
 | env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,119 |
 | context-aware-ai-training | 2025-10-14 | Bourne Shell, DOS Batch, Markdown, Python | 27 | 20 | 4,425 |
-| mindshift | 2025-10-06 | Bourne Shell, DOS Batch, FastAPI, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, TOML, TypeScript, XML, YAML | 740 | 2,042 | 185,891 |
+| mindshift | 2025-10-06 | Bourne Shell, DOS Batch, FastAPI, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, TOML, TypeScript, XML, YAML | 742 | 2,052 | 186,222 |
 | test-llm-apis | 2025-09-29 | Bourne Shell, HTML, JSON, JavaScript, Markdown, YAML | 43 | 0 | 14,061 |
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
