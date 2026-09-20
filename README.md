@@ -23,7 +23,7 @@ Here are some ideas to get you started:
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 6,312 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 6,606 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 1,137 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
@@ -40,7 +40,7 @@ Here are some ideas to get you started:
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
 | personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 248 | 0 | 30,867 |
 | sagearbor.github.io | 2026-05-17 | HTML | 4 | 0 | 303 |
-| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 284 | 0 | 45,096 |
+| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 284 | 0 | 45,120 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 678 | 3,421 | 163,267 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 363 | 0 | 79,657 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML, diff | 624 | 2,717 | 140,475 |
@@ -64,7 +64,7 @@ Here are some ideas to get you started:
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
-| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 100 |
+| sagearbor | 2025-12-22 | Markdown | 1 | 0 | 101 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 778 | 28 | 1,211,204 |
 | llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 4,116 | 5,702 | 4,613,387 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
