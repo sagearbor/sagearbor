@@ -22,8 +22,9 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Markdown, Swift, XML | 111 | 0 | 21,806 |
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 7,107 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 7,479 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 1,137 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
@@ -58,7 +59,7 @@ Here are some ideas to get you started:
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 225 | 0 | 79,216 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 225 | 0 | 78,601 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 74 | 0 | 11,563 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
