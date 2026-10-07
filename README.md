@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 |:---|:---|:---|---:|---:|---:|
 | mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Markdown, Python, SVG, Swift, XML, YAML | 164 | 0 | 33,414 |
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
-| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 7,935 |
+| get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 20 | 0 | 8,157 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
 | faculty-adequacy-dashboard | 2026-08-16 | HTML | 3 | 0 | 1,137 |
 | gauge | 2026-08-02 | Bourne Shell, CSS, DOS Batch, FastAPI, Gradle, JSON, Kotlin, Markdown, Python, TOML, TypeScript, XML | 396 | 528 | 56,683 |
@@ -67,7 +67,7 @@ Here are some ideas to get you started:
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 102 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 778 | 28 | 1,211,204 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 4,117 | 5,706 | 4,613,602 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 6,285 | 6,133 | 5,967,740 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
