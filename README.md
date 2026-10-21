@@ -47,7 +47,7 @@ Here are some ideas to get you started:
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 288 | 0 | 45,501 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 678 | 3,421 | 163,267 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 363 | 0 | 79,657 |
-| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, SVG, TOML, YAML, diff | 640 | 2,809 | 143,401 |
+| irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, SVG, TOML, YAML, diff | 668 | 2,809 | 144,753 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
 | music-CYOA | 2026-03-23 | Dart, Gradle, JSON, Markdown, Python, XML, YAML | 138 | 601 | 19,057 |
@@ -100,7 +100,7 @@ Here are some ideas to get you started:
 | PIrate_research | 2025-07-24 | Bourne Shell, FastAPI, HTML, JSON, Markdown, PowerShell, Python, TOML, YAML | 223 | 424 | 61,468 |
 | worktime_bot_survey | 2025-07-19 | Flask, HTML, JSON, Markdown, Python, YAML | 58 | 28 | 3,792 |
 | workweek_survey | 2025-07-19 | FastAPI, HTML, Python, YAML | 25 | 15 | 828 |
-| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, TypeScript, XML, YAML | 645 | 0 | 136,363 |
+| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TypeScript, XML, YAML | 697 | 0 | 151,984 |
 | dcri-mcp-tools | 2025-07-08 | Bourne Shell, Flask, HTML, JSON, Markdown, Python, YAML | 234 | 808 | 51,205 |
 | clinicalTrials_s2f | 2025-06-12 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 59 | 175 | 7,487 |
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
