@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| futures-brain | 2026-10-21 | HTML, JSON, JavaScript, Markdown, YAML | 237 | 0 | 15,753 |
+| futures-brain | 2026-10-21 | HTML, JSON, JavaScript, Markdown, YAML | 260 | 0 | 17,958 |
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
 | medEpicConsult | 2026-10-08 | CSS, JSON, Markdown, Python, TypeScript, YAML | 57 | 74 | 13,942 |
@@ -101,7 +101,7 @@ Here are some ideas to get you started:
 | PIrate_research | 2025-07-24 | Bourne Shell, FastAPI, HTML, JSON, Markdown, PowerShell, Python, TOML, YAML | 223 | 424 | 61,468 |
 | worktime_bot_survey | 2025-07-19 | Flask, HTML, JSON, Markdown, Python, YAML | 58 | 28 | 3,792 |
 | workweek_survey | 2025-07-19 | FastAPI, HTML, Python, YAML | 25 | 15 | 828 |
-| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TypeScript, XML, YAML | 706 | 0 | 154,188 |
+| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TypeScript, XML, YAML | 711 | 0 | 155,491 |
 | dcri-mcp-tools | 2025-07-08 | Bourne Shell, Flask, HTML, JSON, Markdown, Python, YAML | 234 | 808 | 51,205 |
 | clinicalTrials_s2f | 2025-06-12 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 59 | 175 | 7,487 |
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
