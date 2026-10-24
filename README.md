@@ -43,9 +43,9 @@ Here are some ideas to get you started:
 | dcri-ct-graph | 2026-06-07 | CSS, FastAPI, HTML, JavaScript, Markdown, Python, YAML | 26 | 24 | 1,940 |
 | dcri-a2a-core | 2026-06-07 | HTML, Markdown, Python | 27 | 53 | 6,520 |
 | dcri-platform-status | 2026-06-07 | HTML, JSON, Markdown, Python | 6 | 0 | 705 |
-| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 264 | 0 | 33,147 |
+| personhood | 2026-05-25 | Bourne Shell, CSS, Go, JSON, JavaScript, Markdown, TypeScript | 265 | 0 | 33,167 |
 | sagearbor.github.io | 2026-05-17 | HTML | 6 | 0 | 546 |
-| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 288 | 0 | 45,501 |
+| FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, Snakemake, XML, YAML | 290 | 0 | 45,692 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 678 | 3,421 | 163,267 |
 | openline | 2026-04-13 | Bourne Shell, Circom, Go, JSON, JavaScript, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, YAML | 396 | 0 | 84,107 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, SVG, TOML, YAML, diff | 668 | 2,809 | 144,753 |
@@ -63,26 +63,26 @@ Here are some ideas to get you started:
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, TypeScript, YAML, diff | 309 | 0 | 114,105 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, SVG, Snakemake, TypeScript, YAML, diff | 359 | 0 | 150,066 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 74 | 0 | 11,563 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
 | ml-assets | 2025-12-29 |  | 1 | 0 | 2 |
-| vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 248 | 2 | 102,454 |
+| vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 249 | 2 | 102,472 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 105 |
-| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, TypeScript, YAML | 778 | 28 | 1,211,204 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 18,077 | 6,286 | 14,911,529 |
+| ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, Snakemake, TypeScript, YAML | 779 | 28 | 1,211,349 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 19,699 | 6,343 | 16,319,432 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
-| env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,119 |
+| env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,114 |
 | context-aware-ai-training | 2025-10-14 | Bourne Shell, DOS Batch, Markdown, Python | 27 | 20 | 4,425 |
 | mindshift | 2025-10-06 | Bourne Shell, CSS, CSV, DOS Batch, FastAPI, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TOML, TypeScript, XML, YAML | 1,402 | 2,819 | 334,402 |
 | test-llm-apis | 2025-09-29 | Bourne Shell, HTML, JSON, JavaScript, Markdown, YAML | 43 | 0 | 14,061 |
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, XML, YAML | 588 | 0 | 91,366 |
+| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 590 | 0 | 91,727 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
@@ -94,24 +94,24 @@ Here are some ideas to get you started:
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
-| chatnbook | 2025-08-11 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, PHP, Python, SQL, TypeScript, YAML | 368 | 35 | 30,977 |
+| chatnbook | 2025-08-11 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, PHP, Python, SQL, TypeScript, YAML | 369 | 35 | 30,991 |
 | dcri_ai_Azure_home | 2025-08-04 | CSS, HTML, JSON, JavaScript, Markdown | 7 | 0 | 946 |
 | Medschool_ArborTester | 2025-08-03 | INI, JSON, JavaScript, Markdown, Python, YAML | 60 | 26 | 9,785 |
 | multiAgent_AgileTeam_Start | 2025-08-02 | Markdown, Python | 21 | 3 | 1,635 |
 | PIrate_research | 2025-07-24 | Bourne Shell, FastAPI, HTML, JSON, Markdown, PowerShell, Python, TOML, YAML | 223 | 424 | 61,468 |
 | worktime_bot_survey | 2025-07-19 | Flask, HTML, JSON, Markdown, Python, YAML | 58 | 28 | 3,792 |
 | workweek_survey | 2025-07-19 | FastAPI, HTML, Python, YAML | 25 | 15 | 828 |
-| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TypeScript, XML, YAML | 711 | 0 | 155,491 |
+| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, TypeScript, XML, YAML | 715 | 0 | 157,376 |
 | dcri-mcp-tools | 2025-07-08 | Bourne Shell, Flask, HTML, JSON, Markdown, Python, YAML | 234 | 808 | 51,205 |
 | clinicalTrials_s2f | 2025-06-12 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 59 | 175 | 7,487 |
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
-| whipCongress | 2025-05-23 | FastAPI, JSON, Markdown, PowerShell, Python, Streamlit | 704 | 21 | 161,318 |
+| whipCongress | 2025-05-23 | FastAPI, JSON, Markdown, PowerShell, Python, Streamlit | 704 | 21 | 161,308 |
 | clinical-trial-pvalue-explorer | 2025-05-22 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 58 | 242 | 11,600 |
-| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 215 | 121 | 47,273 |
+| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 215 | 121 | 47,218 |
 | healthU_BMI_test01 | 2025-05-21 | Streamlit | 2 | 0 | 32 |
 | medicalQandA | 2023-11-16 | JSON, Next.js, React, TypeScript, YAML | 18 | 0 | 2,534 |
 | medQandA | 2023-11-16 |  | 1 | 0 | 2 |
-| nextjs-prisma | 2022-06-17 | CSS, JSON, Next.js, React, TypeScript | 14 | 0 | 390 |
+| nextjs-prisma | 2022-06-17 | CSS, JSON, Next.js, React, TypeScript | 15 | 0 | 403 |
 | railwayDBs | 2022-06-17 |  | 0 | 0 | 0 |
 | mesh-stripping | 2019-11-21 | CSV | 3 | 0 | 242,281 |
 | webpage-arborlife-angular | 2017-12-15 | HTML, JSON, JavaScript, TypeScript | 30 | 0 | 10,927 |
