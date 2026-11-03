@@ -22,8 +22,9 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| mvp_landing_page | 2026-10-28 | FastAPI, JavaScript, Markdown, Python, YAML | 36 | 112 | 4,094 |
-| texasHoldemGTO | 2026-10-27 | C++, C/C++ Header, Dart, Gradle, HTML, JSON, Markdown, Python, Swift, XML | 192 | 0 | 33,049 |
+| musicVideos | 2026-11-02 | HTML, JSON, JavaScript, Markdown | 52 | 0 | 8,280 |
+| mvp_landing_page | 2026-10-28 | FastAPI, JavaScript, Markdown, Python, YAML | 39 | 122 | 4,348 |
+| texasHoldemGTO | 2026-10-27 | Bourne Shell, C++, C/C++ Header, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML | 290 | 16 | 54,784 |
 | futures-brain | 2026-10-21 | HTML, JSON, JavaScript, Markdown, YAML | 260 | 0 | 17,958 |
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
@@ -59,7 +60,7 @@ Here are some ideas to get you started:
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
-| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, Markdown, Python, YAML | 83 | 13 | 12,377 |
+| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, JavaScript, Markdown, Python, YAML | 99 | 130 | 16,820 |
 | quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 412 | 921 | 75,917 |
 | arborlife-webpage | 2026-02-23 | HTML, JavaScript, Markdown | 14 | 0 | 3,920 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
@@ -120,7 +121,6 @@ Here are some ideas to get you started:
 | nsNegotiate | 2017-08-13 |  | 1 | 0 | 11 |
 | nativescript-template-ng-groceries | 2017-06-16 | JSON, TypeScript, XML | 21 | 0 | 601 |
 | nsFitnessApp | 2017-04-18 | CSS, HTML, JSON, JavaScript, Markdown, TypeScript, XML | 124 | 0 | 4,730 |
-| nsFitnessApp02 | 2017-03-28 | CSS, JSON, JavaScript, XML | 22 | 0 | 1,537 |
 | medObjs | 2016-04-12 | CSS, HTML, PHP | 15 | 0 | 1,834 |
 
 <!-- LOC_END -->
