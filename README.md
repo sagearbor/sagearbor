@@ -85,15 +85,15 @@ Here are some ideas to get you started:
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 590 | 0 | 91,727 |
+| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 668 | 0 | 108,196 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
 | protocol-assistant | 2025-09-10 | Markdown | 2 | 0 | 307 |
 | dcri-gpt | 2025-09-09 | CSS, INI, JSON, JavaScript, Markdown, Python, TypeScript, YAML | 111 | 166 | 15,504 |
-| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 135 | 131 | 25,092 |
+| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 135 | 140 | 25,094 |
 | dcriCTdash | 2025-09-02 | Markdown, PowerShell, Python, TOML, YAML | 152 | 68 | 33,295 |
-| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 136 | 465 | 30,857 |
+| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 140 | 505 | 31,388 |
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
@@ -110,7 +110,7 @@ Here are some ideas to get you started:
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
 | whipCongress | 2025-05-23 | FastAPI, JSON, Markdown, PowerShell, Python, Streamlit | 704 | 21 | 161,308 |
 | clinical-trial-pvalue-explorer | 2025-05-22 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 58 | 242 | 11,600 |
-| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 228 | 179 | 49,342 |
+| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 230 | 190 | 50,019 |
 | healthU_BMI_test01 | 2025-05-21 | Streamlit | 2 | 0 | 32 |
 | medicalQandA | 2023-11-16 | JSON, Next.js, React, TypeScript, YAML | 18 | 0 | 2,534 |
 | medQandA | 2023-11-16 |  | 1 | 0 | 2 |
