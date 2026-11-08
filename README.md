@@ -22,9 +22,10 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| mindshift-emotion-private | 2026-11-07 | JSON, Markdown | 3,987 | 0 | 530,685 |
 | musicVideos | 2026-11-02 | HTML, JSON, JavaScript, Markdown | 54 | 0 | 9,052 |
 | mvp_landing_page | 2026-10-28 | CSS, FastAPI, JavaScript, Markdown, Python, YAML | 42 | 145 | 5,014 |
-| texasHoldemGTO | 2026-10-27 | Bourne Shell, C++, C/C++ Header, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML | 291 | 16 | 54,869 |
+| texasHoldemGTO | 2026-10-27 | Bourne Shell, C++, C/C++ Header, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML | 291 | 16 | 54,872 |
 | futures-brain | 2026-10-21 | HTML, JSON, JavaScript, Markdown, YAML | 260 | 0 | 17,958 |
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
@@ -80,7 +81,7 @@ Here are some ideas to get you started:
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
 | env-banner-python | 2025-10-16 | Django, FastAPI, Flask, HTML, Markdown, Python | 22 | 0 | 2,114 |
 | context-aware-ai-training | 2025-10-14 | Bourne Shell, DOS Batch, Markdown, Python | 27 | 20 | 4,425 |
-| mindshift | 2025-10-06 | Bourne Shell, CSS, CSV, DOS Batch, FastAPI, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TOML, TypeScript, XML, YAML | 1,516 | 3,129 | 353,855 |
+| mindshift | 2025-10-06 | Bourne Shell, CSS, CSV, DOS Batch, FastAPI, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Swift, TOML, TypeScript, XML, YAML | 1,576 | 3,138 | 359,218 |
 | test-llm-apis | 2025-09-29 | Bourne Shell, HTML, JSON, JavaScript, Markdown, YAML | 43 | 0 | 14,061 |
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
@@ -121,6 +122,5 @@ Here are some ideas to get you started:
 | nsNegotiate | 2017-08-13 |  | 1 | 0 | 11 |
 | nativescript-template-ng-groceries | 2017-06-16 | JSON, TypeScript, XML | 21 | 0 | 601 |
 | nsFitnessApp | 2017-04-18 | CSS, HTML, JSON, JavaScript, Markdown, TypeScript, XML | 124 | 0 | 4,730 |
-| medObjs | 2016-04-12 | CSS, HTML, PHP | 15 | 0 | 1,834 |
 
 <!-- LOC_END -->
