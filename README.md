@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| dcri-game-easterEgg | 2026-11-10 | HTML, JSON, JavaScript | 18 | 0 | 6,965 |
 | mindshift-emotion-private | 2026-11-07 | JSON, Markdown | 3,987 | 0 | 530,685 |
 | musicVideos | 2026-11-02 | HTML, JSON, JavaScript, Markdown | 54 | 0 | 9,052 |
 | mvp_landing_page | 2026-10-28 | CSS, FastAPI, JavaScript, Markdown, Python, YAML | 42 | 146 | 5,048 |
@@ -51,7 +52,7 @@ Here are some ideas to get you started:
 | sagearbor.github.io | 2026-05-17 | HTML | 6 | 0 | 546 |
 | FitRival | 2026-05-02 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, Snakemake, XML, YAML | 290 | 0 | 45,692 |
 | faculty-adequacy | 2026-04-20 | Bourne Shell, CSV, HTML, JSON, Markdown, Python, SVG, TOML, YAML, make | 678 | 3,421 | 163,267 |
-| openline | 2026-04-13 | Bourne Shell, Circom, DOS Batch, Dockerfile, Go, Gradle, JSON, JavaScript, Kotlin, Markdown, Protocol Buffers, Python, Rust, Solidity, TOML, TypeScript, XML, YAML | 1,013 | 0 | 194,616 |
+| openline | 2026-04-13 | Bourne Shell, Circom, DOS Batch, Dockerfile, Go, Gradle, JSON, JavaScript, Kotlin, Markdown, Protocol Buffers, Python, Rust, Solidity, Swift, TOML, TypeScript, XML, YAML | 1,104 | 0 | 216,110 |
 | irb_agent_dcri | 2026-04-07 | Bourne Shell, CSS, CSV, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, SVG, TOML, YAML, diff | 668 | 2,809 | 144,753 |
 | aact-reverse-engineering | 2026-03-25 | CSS, Dockerfile, JSON, Markdown, Python, TypeScript, YAML | 126 | 338 | 36,258 |
 | sage-agent-tempo | 2026-03-25 | JSON, Markdown, TypeScript, YAML | 49 | 0 | 10,008 |
@@ -61,7 +62,7 @@ Here are some ideas to get you started:
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
-| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, JavaScript, Markdown, Python, YAML | 100 | 148 | 17,496 |
+| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, JavaScript, Markdown, Python, YAML | 101 | 163 | 18,142 |
 | quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 412 | 921 | 75,917 |
 | arborlife-webpage | 2026-02-23 | HTML, JavaScript, Markdown | 14 | 0 | 3,920 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
@@ -75,7 +76,7 @@ Here are some ideas to get you started:
 | vocal-align | 2025-12-28 | Dart, Gradle, HTML, JSON, JavaScript, Markdown, Python, XML, YAML | 249 | 2 | 102,472 |
 | sagearbor | 2025-12-22 | Markdown | 1 | 0 | 105 |
 | ai-ubi-wellbeing-transition-simulator | 2025-12-21 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, React, Snakemake, TypeScript, YAML | 779 | 28 | 1,211,349 |
-| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 26,009 | 6,548 | 18,070,545 |
+| llm-as-judge-basedOnRegDocs | 2025-11-13 | Bourne Shell, CSS, CSV, Dockerfile, FastAPI, HTML, JSON, JavaScript, Markdown, Python, TOML, XML, YAML, diff | 26,014 | 6,615 | 18,072,237 |
 | cc_starter_repo_with_agents | 2025-11-06 | Markdown | 7 | 0 | 973 |
 | repo-to-video | 2025-10-31 | Bourne Shell, Markdown, Python, YAML | 54 | 36 | 6,435 |
 | env-banner-node | 2025-10-16 | HTML, JavaScript, Markdown | 7 | 0 | 785 |
@@ -86,15 +87,15 @@ Here are some ideas to get you started:
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 699 | 0 | 119,285 |
+| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 708 | 0 | 122,426 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
 | protocol-assistant | 2025-09-10 | Markdown | 2 | 0 | 307 |
 | dcri-gpt | 2025-09-09 | CSS, INI, JSON, JavaScript, Markdown, Python, TypeScript, YAML | 111 | 166 | 15,504 |
-| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 135 | 140 | 25,094 |
+| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 136 | 146 | 25,136 |
 | dcriCTdash | 2025-09-02 | Markdown, PowerShell, Python, TOML, YAML | 152 | 68 | 33,295 |
-| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 140 | 505 | 31,388 |
+| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 142 | 522 | 31,570 |
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
@@ -105,13 +106,13 @@ Here are some ideas to get you started:
 | PIrate_research | 2025-07-24 | Bourne Shell, FastAPI, HTML, JSON, Markdown, PowerShell, Python, TOML, YAML | 225 | 424 | 61,535 |
 | worktime_bot_survey | 2025-07-19 | Flask, HTML, JSON, Markdown, Python, YAML | 58 | 28 | 3,792 |
 | workweek_survey | 2025-07-19 | FastAPI, HTML, Python, YAML | 25 | 15 | 828 |
-| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, TypeScript, XML, YAML | 835 | 0 | 194,574 |
+| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, TypeScript, XML, YAML | 867 | 0 | 204,984 |
 | dcri-mcp-tools | 2025-07-08 | Bourne Shell, Flask, HTML, JSON, Markdown, Python, YAML | 234 | 808 | 51,205 |
 | clinicalTrials_s2f | 2025-06-12 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 59 | 175 | 7,487 |
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
 | whipCongress | 2025-05-23 | FastAPI, JSON, Markdown, PowerShell, Python, Streamlit | 704 | 21 | 161,308 |
 | clinical-trial-pvalue-explorer | 2025-05-22 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 58 | 242 | 11,600 |
-| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 230 | 190 | 50,019 |
+| word-doc-chatbot | 2025-05-21 | Bourne Shell, Dockerfile, FastAPI, JSON, Markdown, Python, Svelte, TypeScript, YAML | 231 | 202 | 50,346 |
 | healthU_BMI_test01 | 2025-05-21 | Streamlit | 2 | 0 | 32 |
 | medicalQandA | 2023-11-16 | JSON, Next.js, React, TypeScript, YAML | 18 | 0 | 2,534 |
 | medQandA | 2023-11-16 |  | 1 | 0 | 2 |
@@ -120,7 +121,6 @@ Here are some ideas to get you started:
 | mesh-stripping | 2019-11-21 | CSV | 3 | 0 | 242,281 |
 | webpage-arborlife-angular | 2017-12-15 | HTML, JSON, JavaScript, TypeScript | 30 | 0 | 10,927 |
 | nsNegotiate | 2017-08-13 |  | 1 | 0 | 11 |
-| nativescript-template-ng-groceries | 2017-06-16 | JSON, TypeScript, XML | 21 | 0 | 601 |
 | nsFitnessApp | 2017-04-18 | CSS, HTML, JSON, JavaScript, Markdown, TypeScript, XML | 124 | 0 | 4,730 |
 
 <!-- LOC_END -->
