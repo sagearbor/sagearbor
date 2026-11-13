@@ -32,7 +32,7 @@ Here are some ideas to get you started:
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
 | medEpicConsult | 2026-10-08 | CSS, JSON, Markdown, Python, TypeScript, YAML | 57 | 74 | 13,942 |
-| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Markdown, Python, SVG, Swift, XML, YAML | 164 | 0 | 33,414 |
+| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Kotlin, Markdown, Python, SVG, Swift, XML, YAML | 175 | 0 | 35,202 |
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
 | get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 22 | 0 | 9,424 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
@@ -63,7 +63,7 @@ Here are some ideas to get you started:
 | tapple | 2026-03-08 | HTML | 1 | 0 | 310 |
 | neighborhood-poker | 2026-03-04 | HTML, Markdown, Python | 12 | 0 | 3,253 |
 | 47doors | 2026-02-26 | Bourne Shell, CSS, HTML, JSON, JavaScript, Markdown, Python, TOML, TypeScript, YAML | 211 | 296 | 43,800 |
-| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, JavaScript, Markdown, Python, YAML | 101 | 163 | 18,142 |
+| portable-agent-a2a-pipeline | 2026-02-26 | Bourne Shell, HTML, JSON, JavaScript, Markdown, Python, YAML | 102 | 169 | 18,299 |
 | quorum | 2026-02-25 | Bourne Shell, HTML, JSON, Markdown, Python, SQL, TOML, TypeScript, YAML | 412 | 921 | 75,917 |
 | arborlife-webpage | 2026-02-23 | HTML, JavaScript, Markdown | 14 | 0 | 3,920 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
@@ -88,7 +88,7 @@ Here are some ideas to get you started:
 | api-tests-dcri | 2025-09-23 | Markdown, Python | 9 | 4 | 1,281 |
 | ghCreate-mockData-from-real-file | 2025-09-22 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 57 | 61 | 10,405 |
 | git-scan | 2025-09-19 | Markdown, Python | 3 | 0 | 523 |
-| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 718 | 0 | 124,529 |
+| taskcaster-app | 2025-09-17 | Bourne Shell, C++, CMake, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, XML, YAML | 718 | 0 | 124,539 |
 | schedule-assessments-optimizer | 2025-09-11 | Bourne Shell, JSON, JavaScript, Markdown, Python, TypeScript | 66 | 38 | 9,204 |
 | secure-dev-tools | 2025-09-11 | Bourne Shell, Dockerfile, Markdown | 19 | 0 | 668 |
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
