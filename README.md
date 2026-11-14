@@ -22,6 +22,8 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| contextflow-corpus | 2026-11-13 | HTML, JSON, Markdown | 109 | 0 | 7,923 |
+| contextflow-research | 2026-11-13 | Markdown | 7 | 0 | 376 |
 | wfusm-game-2026 | 2026-11-11 | CSS, HTML, JavaScript, Markdown | 13 | 0 | 4,127 |
 | dcri-game-easterEgg | 2026-11-10 | HTML, JSON, JavaScript | 18 | 0 | 6,965 |
 | mindshift-emotion-private | 2026-11-07 | JSON, Markdown | 3,987 | 0 | 530,685 |
@@ -32,7 +34,7 @@ Here are some ideas to get you started:
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
 | medEpicConsult | 2026-10-08 | CSS, JSON, Markdown, Python, TypeScript, YAML | 57 | 74 | 13,942 |
-| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Kotlin, Markdown, Python, SVG, Swift, XML, YAML | 175 | 0 | 35,202 |
+| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Kotlin, Markdown, Python, SVG, Swift, XML, YAML | 191 | 0 | 38,981 |
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
 | get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 22 | 0 | 9,424 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
@@ -69,7 +71,7 @@ Here are some ideas to get you started:
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 458 | 0 | 251,656 |
+| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 458 | 0 | 251,659 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 74 | 0 | 11,563 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
@@ -107,7 +109,7 @@ Here are some ideas to get you started:
 | PIrate_research | 2025-07-24 | Bourne Shell, FastAPI, HTML, JSON, Markdown, PowerShell, Python, TOML, YAML | 225 | 424 | 61,535 |
 | worktime_bot_survey | 2025-07-19 | Flask, HTML, JSON, Markdown, Python, YAML | 58 | 28 | 3,792 |
 | workweek_survey | 2025-07-19 | FastAPI, HTML, Python, YAML | 25 | 15 | 828 |
-| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, TypeScript, XML, YAML | 892 | 0 | 212,717 |
+| oralhistory_timeline | 2025-07-11 | Bourne Shell, Dart, Gradle, HTML, JSON, JavaScript, Kotlin, Markdown, Python, Snakemake, Swift, TypeScript, XML, YAML | 894 | 0 | 213,061 |
 | dcri-mcp-tools | 2025-07-08 | Bourne Shell, Flask, HTML, JSON, Markdown, Python, YAML | 234 | 808 | 51,205 |
 | clinicalTrials_s2f | 2025-06-12 | FastAPI, JSON, Markdown, Python, Streamlit, YAML | 59 | 175 | 7,487 |
 | archiveProcessingAgent | 2025-05-29 | HTML, Markdown, Python | 77 | 113 | 5,081 |
@@ -120,7 +122,5 @@ Here are some ideas to get you started:
 | nextjs-prisma | 2022-06-17 | CSS, JSON, Next.js, React, TypeScript | 15 | 0 | 403 |
 | railwayDBs | 2022-06-17 |  | 0 | 0 | 0 |
 | mesh-stripping | 2019-11-21 | CSV | 3 | 0 | 242,281 |
-| webpage-arborlife-angular | 2017-12-15 | HTML, JSON, JavaScript, TypeScript | 30 | 0 | 10,927 |
-| nsFitnessApp | 2017-04-18 | CSS, HTML, JSON, JavaScript, Markdown, TypeScript, XML | 124 | 0 | 4,730 |
 
 <!-- LOC_END -->
