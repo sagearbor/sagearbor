@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| contextflow-corpus | 2026-11-13 | HTML, JSON, Markdown | 111 | 0 | 7,942 |
+| contextflow-corpus | 2026-11-13 | HTML, JSON, Markdown | 744 | 0 | 173,665 |
 | contextflow-research | 2026-11-13 | Markdown | 8 | 0 | 496 |
 | wfusm-game-2026 | 2026-11-11 | CSS, HTML, JavaScript, Markdown | 13 | 0 | 4,127 |
 | dcri-game-easterEgg | 2026-11-10 | HTML, JSON, JavaScript | 18 | 0 | 6,965 |
@@ -34,7 +34,7 @@ Here are some ideas to get you started:
 | irb-agent | 2026-10-15 | CSS, FastAPI, HTML, JSON, JavaScript, Markdown, Python, SQL, TOML, YAML | 511 | 2,734 | 118,430 |
 | claude-music-video-skill | 2026-10-13 | JavaScript, Markdown, Python | 34 | 3 | 5,646 |
 | medEpicConsult | 2026-10-08 | CSS, JSON, Markdown, Python, TypeScript, YAML | 57 | 74 | 13,942 |
-| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Kotlin, Markdown, Python, SVG, Swift, XML, YAML | 191 | 0 | 38,981 |
+| mosaicHighRes | 2026-10-04 | Bourne Shell, Dart, Gradle, JSON, Kotlin, Markdown, Python, SVG, Swift, XML, YAML | 191 | 0 | 38,990 |
 | tuner | 2026-09-18 | HTML | 2 | 0 | 274 |
 | get-shipped | 2026-09-06 | HTML, JSON, Markdown, Python | 22 | 0 | 9,424 |
 | faculty-adequacy-dashboard-private | 2026-08-24 | HTML, JSON, Markdown | 6 | 0 | 2,129 |
@@ -70,8 +70,8 @@ Here are some ideas to get you started:
 | arborlife-webpage | 2026-02-23 | HTML, JavaScript, Markdown | 14 | 0 | 3,920 |
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
-| contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 209 |
-| contextflow | 2026-02-03 | HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 458 | 0 | 251,659 |
+| contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 206 |
+| contextflow | 2026-02-03 | Bourne Shell, HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 984 | 0 | 325,056 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 74 | 0 | 11,563 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
