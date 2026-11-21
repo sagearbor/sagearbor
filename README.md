@@ -71,7 +71,7 @@ Here are some ideas to get you started:
 | azure-a2a-agents | 2026-02-19 |  | 0 | 0 | 0 |
 | hecvat-assess | 2026-02-13 | HTML, JSON, Markdown, Python, YAML | 25 | 107 | 13,499 |
 | contextFlow-upgrade | 2026-02-06 | HTML | 4 | 0 | 206 |
-| contextflow | 2026-02-03 | Bourne Shell, HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 1,076 | 0 | 339,766 |
+| contextflow | 2026-02-03 | Bourne Shell, HTML, JSON, JavaScript, Markdown, PHP, SVG, Snakemake, TypeScript, XML, YAML, diff | 1,077 | 0 | 340,104 |
 | ai-skill-eval-kit | 2026-01-20 | CSS, HTML, JSON, JavaScript, Markdown, Python, YAML | 30 | 0 | 12,419 |
 | megaCity-rotating | 2026-01-11 | JSON, JavaScript, Markdown, React, TypeScript | 74 | 0 | 11,563 |
 | VaxInsight | 2026-01-07 | HTML, JSON, JavaScript, Markdown, React, TypeScript | 19 | 0 | 5,059 |
@@ -96,9 +96,9 @@ Here are some ideas to get you started:
 | RWE-planner | 2025-09-10 | Bourne Shell, CSS, JSON, JavaScript, Markdown, Python, YAML, make | 43 | 43 | 3,257 |
 | protocol-assistant | 2025-09-10 | Markdown | 2 | 0 | 307 |
 | dcri-gpt | 2025-09-09 | CSS, INI, JSON, JavaScript, Markdown, Python, TypeScript, YAML | 111 | 166 | 15,504 |
-| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 141 | 228 | 27,902 |
+| Create-mockData-from-real-file | 2025-09-06 | Bourne Shell, CSS, Dockerfile, FastAPI, HCL, HTML, JSON, JavaScript, Markdown, Python, YAML | 135 | 446 | 25,526 |
 | dcriCTdash | 2025-09-02 | Markdown, PowerShell, Python, TOML, YAML | 152 | 68 | 33,295 |
-| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 142 | 522 | 31,570 |
+| data-analyzer | 2025-08-21 | Bourne Shell, Dockerfile, JSON, Markdown, Python, Streamlit, YAML | 249 | 936 | 60,967 |
 | csvChecker | 2025-08-19 | JSON, Markdown, Python, Streamlit, YAML | 25 | 68 | 3,227 |
 | dcriCrawl | 2025-08-17 | Markdown, Python, Streamlit, YAML | 25 | 8 | 785 |
 | concatGitFiles | 2025-08-16 |  | 3 | 0 | 90 |
