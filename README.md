@@ -22,6 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
+| CTs_DCRI | 2026-11-26 |  | 1 | 0 | 1 |
 | contextflow-corpus | 2026-11-13 | HTML, JSON, Markdown | 744 | 0 | 173,665 |
 | contextflow-research | 2026-11-13 | Markdown | 8 | 0 | 496 |
 | wfusm-game-2026 | 2026-11-11 | CSS, HTML, JavaScript, Markdown | 13 | 0 | 4,127 |
@@ -121,6 +122,5 @@ Here are some ideas to get you started:
 | medQandA | 2023-11-16 |  | 1 | 0 | 2 |
 | nextjs-prisma | 2022-06-17 | CSS, JSON, Next.js, React, TypeScript | 15 | 0 | 403 |
 | railwayDBs | 2022-06-17 |  | 0 | 0 | 0 |
-| mesh-stripping | 2019-11-21 | CSV | 3 | 0 | 242,281 |
 
 <!-- LOC_END -->
