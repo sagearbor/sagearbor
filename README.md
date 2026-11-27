@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 
 | Repo | Created | Stack | Files | Tests | LOC |
 |:---|:---|:---|---:|---:|---:|
-| CTs_DCRI | 2026-11-26 |  | 1 | 0 | 1 |
+| CTs_DCRI | 2026-11-26 | CSS, CSV, HTML, JSON, JavaScript, Markdown, Python, Ruby, SQL | 1,010 | 0 | 320,261 |
 | contextflow-corpus | 2026-11-13 | HTML, JSON, Markdown | 744 | 0 | 173,665 |
 | contextflow-research | 2026-11-13 | Markdown | 8 | 0 | 496 |
 | wfusm-game-2026 | 2026-11-11 | CSS, HTML, JavaScript, Markdown | 13 | 0 | 4,127 |
